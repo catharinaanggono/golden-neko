@@ -40,7 +40,7 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
     <div class="container text-right">
-      <i class="icofont-phone"></i> +1 5589 55488 55
+      <i class="icofont-phone"></i> 999
       <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM
     </div>
   </section>
@@ -50,7 +50,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Delicious</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><img src="pictures/logo.svg" alt="" class="img-fluid"><span>Golden Neko</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -58,15 +58,15 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <!-- <li><a href="#menu">Menu</a></li>
           <li><a href="#specials">Specials</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li> -->
 
-          <li class="book-a-table text-center"><a href="#book-a-table">Book a table</a></li>
+          <li class="book-a-table text-center"><a href="#book-a-table">Book a room</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -97,7 +97,7 @@
       
               <div class="section-title">
                 <h2>Bring Cinema Experience<span> To Your Home</span></h2>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                <p>All you have to do is select the KTV outlet and movie. Easy right?</p>
               </div>
       
               <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
@@ -124,26 +124,27 @@
                   </div>
                   <div class="col-lg-4 col-md-6 form-group">
                     <!-- <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars"> -->
-                    <select name="RoomType" class="form-control" id="RoomType">
+                    <select name="RoomType" class="form-control" id="RoomType" onchange="price()">
                         <option value="KTV 0" disabled="disabled" selected="true"> Choose your room type</option>
-                        <option value="Type 1"> Normal</option>
-                        <option value="Type 2"> VIP</option>
+                        <option value='10'> Normal</option>
+                        <option value="25"> VIP</option>
                     </select>
                     <div class="validate"></div>
                   </div>
                   <div class="col-lg-12 col-md-6 form-group">
                     <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"> -->
-                    <select name="KTV" class="form-control" id="KTV">
-                        <option value="KTV 0" disabled="disabled" selected="true"> Select the movie you want to watch</option>
+                    <select name="KTV" class="form-control" id="Movie">
+                        <!-- <option value="KTV 0" disabled="disabled" selected="true"> Select the movie you want to watch</option>
                         <option value="KTV 1"> Movie 1</option>
                         <option value="KTV 2"> Movie 2</option>
-                        <option value="KTV 3"> Movie 3</option>
+                        <option value="KTV 3"> Movie 3</option> -->
                     </select>
                     <div class="validate"></div>
                   </div>
                   <div class="col-lg-12 col-md-6 form-group">
                     <input type="text" name="date" class="form-control" id="date" placeholder="Plese enter your email" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                    <div class="validate"></div>
+                    <div class="validate"></div><br>
+                    <p id='payment_fees' style="text-align:center;"></p>
                   </div>
                   <!-- <div class="col-lg-4 col-md-6 form-group">
                     <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -154,6 +155,7 @@
                     <div class="validate"></div>
                   </div> -->
                 </div>
+
                 <!-- <div class="form-group">
                   <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
                   <div class="validate"></div>
@@ -224,8 +226,8 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Delicious</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3>Golden Neko</h3>
+      <p>Bringing private to movie exprience</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -257,24 +259,49 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+    
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
   <script>
     var name = localStorage.getItem("name");
+    var movie_name = localStorage.getItem('movie_name');
+    var movie_list = ['Avengers: Endgame', 'Godzilla vs Kong', 'Minari', 'Raya and The Last Dragon']
     var ktv_list = ['Ganso Manekineko Orchard Cineleisure', 'Manekineko *Scape', 'MANEKINEKO Bugis+', 'MANEKINEKO Marina Square', 'MANEKINEKO Lucky Chinatown', 'MANEKINEKO SAFRA Punggol', 'MANEKINEKO SAFRA Jurong', 'Manekineko Tampines 1']
     
-    output = '';
+    ktv_output = '';
     for(ktv of ktv_list){
       if(name == ktv){
-        output += '<option value="'+ ktv+'" selected="true">'+ ktv+'</option>'
+        ktv_output += '<option value="'+ ktv+'" selected="true">'+ ktv+'</option>'
       }else{
-        output += '<option value="'+ ktv+'">'+ ktv+'</option>'
+        ktv_output += '<option value="'+ ktv+'">'+ ktv+'</option>'
       }
     }
 
-    document.getElementById("KTV").innerHTML = output;
+    movie_output = '';
+    for(movie of movie_list){
+      if(movie_name == movie){
+        movie_output += '<option value="'+ movie+'" selected="true">'+ movie+'</option>'
+      }else{
+        movie_output += '<option value="'+ movie+'">'+ movie+'</option>'
+      }
+    }
+
+    document.getElementById("Movie").innerHTML = movie_output;
+    document.getElementById("KTV").innerHTML = ktv_output;
+  </script>
+
+  <script>
+    function price(){
+      var price = document.getElementById("RoomType").value;
+      var output_fees = "Total Fees: $" + price;
+      document.getElementById("payment_fees").innerHTML = output_fees
+    }
   </script>
 
 </body>
