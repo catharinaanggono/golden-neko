@@ -42,7 +42,7 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
     <div class="container text-right">
-      <i class="icofont-phone"></i> +999
+      <i class="icofont-phone"></i> 999
       <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM
     </div>
   </section>
@@ -60,15 +60,15 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <!-- <li><a href="#menu">Menu</a></li>
           <li><a href="#specials">Specials</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li> -->
 
-          <li class="book-a-table text-center"><a href="#book-a-table">Book a room</a></li>
+          <li class="book-a-table text-center"><a href="booking.html">Book a room</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -91,8 +91,8 @@
                 <h2 class="animate__animated animate__fadeInDown"><span>Golden</span> Neko</h2>
                 <p class="animate__animated animate__fadeInUp">Have you ever dreamt of having a private cinema to yourself? Here in Golden Neko, we make that dream a reality. What are you waiting for? Come and visit us now!</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
+                  <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
+                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
                 </div>
               </div>
             </div>
@@ -105,8 +105,8 @@
                 <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
+                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -120,8 +120,8 @@
                 <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
+                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -146,30 +146,30 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="movie" class="about">
       <div class="container-fluid">
         <h1 style="text-align: center;">Movies</h1>
 
         <!-- Row 1 -->
         <div class="row">
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/avengers.jpg' alt='avengers' width="100%" >
+            <a onclick="move_movie('Raya and The Last Dragon')">
+              <img src='pictures/avengers.jpg' onclick="move_movie('Avengers: Endgame')" alt='avengers' width="100%" >
             </a>
           </div>
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/goziila.png' alt='gozilla' width="100%" >
+            <a onclick="move_movie('Godzilla vs Kong')">
+              <img src='pictures/goziila.png' onclick="move_movie('Godzilla vs Kong')" alt='gozilla' width="100%" >
             </a>
           </div>
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/minari.jpg' alt='minari' width="100%" >
+            <a onclick="move_movie('Minari')">
+              <img src='pictures/minari.jpg' onclick="move_movie('Minari')" alt='minari' width="100%" >
             </a>
           </div>
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/raya.jpeg' alt='raya' width="100%" >
+            <a onclick="move_movie('Raya and The Last Dragon')">
+              <img src='pictures/raya.jpeg'  alt='raya' width="100%" >
             </a>
           </div>
         </div>
@@ -185,7 +185,7 @@
             Minari
           </div>
           <div class='col-md-3'style="text-align: center;">
-            Raya
+            Raya and The Last Dragon
           </div>
         </div>
 
