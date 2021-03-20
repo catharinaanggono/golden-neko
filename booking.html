@@ -179,7 +179,7 @@
               
                       createOrder: function(data, actions) {
                         return actions.order.create({
-                          purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+                          purchase_units: [{"amount":{"currency_code":"USD","value":10}}]
                         });
                       },
               
@@ -300,7 +300,7 @@
     function price(){
       var price = document.getElementById("RoomType").value;
       var output_fees = "Total Fees: $" + price;
-      document.getElementById("payment_fees").innerHTML = output_fees
+      document.getElementById("payment_fees").innerHTML = output_fees;
     }
   </script>
 
