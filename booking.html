@@ -251,16 +251,15 @@
 
   <script>
     var name = localStorage.getItem("name");
-    console.log(name);
-
     var ktv_list = ['Ganso Manekineko Orchard Cineleisure', 'Manekineko *Scape', 'MANEKINEKO Bugis+', 'MANEKINEKO Marina Square', 'MANEKINEKO Lucky Chinatown', 'MANEKINEKO SAFRA Punggol', 'MANEKINEKO SAFRA Jurong', 'Manekineko Tampines 1']
     
     output = '';
     for(ktv of ktv_list){
       if(name == ktv){
         output += '<option value="'+ ktv+'" selected="true">'+ ktv+'</option>'
+      }else{
+        output += '<option value="'+ ktv+'">'+ ktv+'</option>'
       }
-      output += '<option value="'+ ktv+'">'+ ktv+'</option>'
     }
 
     document.getElementById("KTV").innerHTML = output;
