@@ -105,10 +105,10 @@
                   <div class="col-lg-4 col-md-6 form-group">
                     <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"> -->
                     <select name="KTV" class="form-control" id="KTV">
-                        <option value="KTV 0" disabled="disabled" selected="true"> Choose your KTV</option>
+                        <!-- <option value="KTV 0" disabled="disabled" selected="true"> Choose your KTV</option>
                         <option value="KTV 1"> KTV 1</option>
                         <option value="KTV 2"> KTV 2</option>
-                        <option value="KTV 3"> KTV 3</option>
+                        <option value="KTV 3"> KTV 3</option> -->
                     </select>
                     <div class="validate"></div>
                   </div>
@@ -248,6 +248,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    var name = localStorage.getItem("name");
+    console.log(name);
+
+    var ktv_list = ['Ganso Manekineko Orchard Cineleisure', 'Manekineko *Scape', 'MANEKINEKO Bugis+', 'MANEKINEKO Marina Square', 'MANEKINEKO Lucky Chinatown', 'MANEKINEKO SAFRA Punggol', 'MANEKINEKO SAFRA Jurong', 'Manekineko Tampines 1']
+    
+    output = '';
+    for(ktv of ktv_list){
+      if(name == ktv){
+        output += '<option value="'+ ktv+'" selected="true">'+ ktv+'</option>'
+      }
+      output += '<option value="'+ ktv+'">'+ ktv+'</option>'
+    }
+
+    document.getElementById("KTV").innerHTML = output;
+  </script>
 
 </body>
 
