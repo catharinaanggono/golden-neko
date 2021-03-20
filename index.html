@@ -27,6 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Script files -->
+  <script src='index.js'></script>
   <!-- =======================================================
   * Template Name: Delicious - v2.2.1
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -40,7 +42,7 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
     <div class="container text-right">
-      <i class="icofont-phone"></i> +999
+      <i class="icofont-phone"></i> 999
       <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM
     </div>
   </section>
@@ -50,23 +52,23 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Golden Neko</span></a></h1>
+        <h1><a href="index.html" class="navbar-brand"><img src="pictures/logo.svg" alt="" class="img-fluid"></a><class class="text-light"><a href="index.html"><span style='color: #ffb03b;'>Golden</span> Neko</a></class></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        
       </div>
-
+      <img scr='pictures/logo.svg'>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <!-- <li><a href="#menu">Menu</a></li>
           <li><a href="#specials">Specials</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li> -->
 
-          <li class="book-a-table text-center"><a href="#book-a-table">Book a room</a></li>
+          <li class="book-a-table text-center"><a href="booking.html">Book a room</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -83,28 +85,28 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
+          <div class="carousel-item active" style="background: url(pictures/new.svg); background-size: 110%; background-position-x: 40%; background-position-y: 50%; background-repeat: no-repeat;">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>Golden</span> Neko</h2>
                 <p class="animate__animated animate__fadeInUp">Have you ever dreamt of having a private cinema to yourself? Here in Golden Neko, we make that dream a reality. What are you waiting for? Come and visit us now!</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
+                  <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
+                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
+          <div class="carousel-item" style="background: url(pictures/ktv.jpg); background-size: 110%; background-position-y: 10%; background-repeat: no-repeat;">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
+                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -118,8 +120,8 @@
                 <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                  <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
+                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
                 </div>
               </div>
             </div>
@@ -144,30 +146,30 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="movie" class="about">
       <div class="container-fluid">
         <h1 style="text-align: center;">Movies</h1>
 
         <!-- Row 1 -->
         <div class="row">
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/avengers.jpg' alt='avengers' width="100%" >
+            <a onclick="move_movie('Raya and The Last Dragon')">
+              <img src='pictures/avengers.jpg' onclick="move_movie('Avengers: Endgame')" alt='avengers' width="100%" >
             </a>
           </div>
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/goziila.png' alt='gozilla' width="100%" >
+            <a onclick="move_movie('Godzilla vs Kong')">
+              <img src='pictures/goziila.png' onclick="move_movie('Godzilla vs Kong')" alt='gozilla' width="100%" >
             </a>
           </div>
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/minari.jpg' alt='minari' width="100%" >
+            <a onclick="move_movie('Minari')">
+              <img src='pictures/minari.jpg' onclick="move_movie('Minari')" alt='minari' width="100%" >
             </a>
           </div>
           <div class='col-md-3'>
-            <a href="#">
-              <img src='pictures/raya.jpeg' alt='raya' width="100%" >
+            <a onclick="move_movie('Raya and The Last Dragon')">
+              <img src='pictures/raya.jpeg'  alt='raya' width="100%" >
             </a>
           </div>
         </div>
@@ -183,7 +185,7 @@
             Minari
           </div>
           <div class='col-md-3'style="text-align: center;">
-            Raya
+            Raya and The Last Dragon
           </div>
         </div>
 
@@ -214,7 +216,7 @@
 
           <div class="col-lg-6 menu-item filter-central">
             <div class="menu-content">
-              <a href="booking.html?" onclick="window.">Ganso Manekineko Orchard Cineleisure</a><span>Open</span>
+              <a onclick="move('Ganso Manekineko Orchard Cineleisure')">Ganso Manekineko Orchard Cineleisure</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 8 Grange Road #08-01 Cathay Cineleisure Orchard Singapore 239695 <br>
@@ -225,7 +227,7 @@
 
           <div class="col-lg-6 menu-item filter-central">
             <div class="menu-content">
-              <a href="#">Manekineko *Scape</a><span>Open</span>
+              <a onclick="move('Manekineko *Scape')">Manekineko *Scape</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 2 Orchard Link #03-05 *SCAPE Singapore 237978 <br>
@@ -236,7 +238,7 @@
 
           <div class="col-lg-6 menu-item filter-central">
             <div class="menu-content">
-              <a href="#">MANEKINEKO Bugis+</a><span>Open</span>
+              <a onclick="move('MANEKINEKO Bugis+')">MANEKINEKO Bugis+</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 201 Victoria Street #03-18 Singapore 188067 <br>
@@ -247,7 +249,7 @@
 
           <div class="col-lg-6 menu-item filter-central">
             <div class="menu-content">
-              <a href="#">MANEKINEKO Marina Square</a><span>Open</span>
+              <a onclick="move('MANEKINEKO Marina Square')">MANEKINEKO Marina Square</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 6 Raffles Boulevard #03-208, Singapore 039594 <br>
@@ -258,7 +260,7 @@
 
           <div class="col-lg-6 menu-item filter-central">
             <div class="menu-content">
-              <a href="#">MANEKINEKO Lucky Chinatown</a><span>Open</span>
+              <a onclick="move('MANEKINEKO Lucky Chinatown')">MANEKINEKO Lucky Chinatown</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 211 New Bridge Road #04-01 Singapore 059432<br>
@@ -269,7 +271,7 @@
 
           <div class="col-lg-6 menu-item filter-NE">
             <div class="menu-content">
-              <a href="#">MANEKINEKO SAFRA Punggol</a><span>Open</span>
+              <a onclick="move('MANEKINEKO SAFRA Punggol')">MANEKINEKO SAFRA Punggol</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 9 Sentul Crescent #05-02 Singapore 828654<br>
@@ -280,10 +282,10 @@
 
           <div class="col-lg-6 menu-item filter-West">
             <div class="menu-content">
-              <a href="#">333 Boon Lay Way #3A-01 Singapore 649848</a><span>Open</span>
+              <a onclick="move('MANEKINEKO SAFRA Jurong')">MANEKINEKO SAFRA Jurong</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
-              Address: 9 Sentul Crescent #05-02 Singapore 828654<br>
+              Address: 333 Boon Lay Way #3A-01 Singapore 649848<br>
               Telphone: 6561 3113<br>
               Operating Hours: 11:00am - 3:00am
             </div>
@@ -291,7 +293,7 @@
 
           <div class="col-lg-6 menu-item filter-East">
             <div class="menu-content">
-              <a href="#">Manekineko Tampines 1</a><span>Open</span>
+              <a onclick="move('Manekineko Tampines 1')">Manekineko Tampines 1</a><span>Open</span>
             </div>
             <div class="menu-ingredients">
               Address: 10 Tampines Central One #04-07/08, Tampines One, Singapore 529536<br>
