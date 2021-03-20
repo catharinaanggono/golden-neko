@@ -22,8 +22,8 @@ def send_email():
     print(data)
     recipients = data['recipients']
     # try:
-    msg = Message('TCM Booking Confirmation', sender = 'phrisctcm@gmail.com', recipients = [recipients])
-    msg.body = "Hello Flask message sent from Flask-Mail"
+    msg = Message('Room Booking Confirmation', sender = 'phrisctcm@gmail.com', recipients = [recipients])
+    msg.body = "Thank you for booking a room with us. Please show this email confirmation when visiting our outlets. Hope you will have a pleasant experience with us. See you!"
     mail.send(msg)
 
         # do the actual work
