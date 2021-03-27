@@ -186,7 +186,7 @@
                       onApprove: function(data, actions) {
                         return actions.order.capture().then(function(details) {
                           alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                          email_json = {"recipients": "jtedja.2019@smu.edu.sg"};
+                          email_json = {"recipients": document.getElementById('date').value};
                           var xmlHttp = new XMLHttpRequest();
                           xmlHttp.onreadystatechange = function() { 
                             if (xmlHttp.readyState == 4 && xmlHttp.status == 200){

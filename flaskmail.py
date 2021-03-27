@@ -9,7 +9,7 @@ mail= Mail(app)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'phrisctcm@gmail.com'
+app.config['MAIL_USERNAME'] = 'goldenneko8@gmail.com'
 app.config['MAIL_PASSWORD'] = 'hello_123'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
@@ -22,7 +22,7 @@ def send_email():
     print(data)
     recipients = data['recipients']
     # try:
-    msg = Message('Room Booking Confirmation', sender = 'phrisctcm@gmail.com', recipients = [recipients])
+    msg = Message('Room Booking Confirmation', sender = 'goldenneko8@gmail.com', recipients = [recipients])
     msg.body = "Thank you for booking a room with us. Please show this email confirmation when visiting our outlets. Hope you will have a pleasant experience with us. See you!"
     mail.send(msg)
 
