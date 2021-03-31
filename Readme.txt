@@ -25,4 +25,4 @@ Please start the flaskmail.py through typing the following code inside the termi
     Email: catharinaa.2019@smu.edu.sg
 6b. Check the legal age statement and click "Pay Now"
 
-7. An email should be sent to the email entered in point 3
+7. Press "OK" on the alert and an email should be sent to the email entered in point 3
