@@ -44,17 +44,17 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1><a href="index.html" class="navbar-brand"><img src="pictures/logo.svg" alt="" class="img-fluid"></a><class class="text-light"><a href="index.html"><span style='color: #ffb03b;'>Golden</span> Neko</a></class></h1>
+        <h1><a href="index.php" class="navbar-brand"><img src="pictures/logo.svg" alt="" class="img-fluid"></a><class class="text-light"><a href="index.html"><span style='color: #ffb03b;'>Golden</span> Neko</a></class></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         
       </div>
       <img scr='pictures/logo.svg'>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="booking.html">Booking</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="booking.php">Booking</a></li>
 
-          <li class="book-a-table text-center"><a href="booking.html">Book a room</a></li>
+          <li class="book-a-table text-center"><a href="booking.php">Book a room</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -78,7 +78,7 @@
                 <p class="animate__animated animate__fadeInUp">Have you ever dreamt of having a private cinema to yourself? Here in Golden Neko, we make that dream a reality. What are you waiting for? Come and visit us now!</p>
                 <div>
                   <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
-                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
+                  <a href="booking.php" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@
                 <p class="animate__animated animate__fadeInUp">The best cinema experience you will have.</p>
                 <div>
                   <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
-                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
+                  <a href="booking.php" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@
                 <p class="animate__animated animate__fadeInUp">Raya has long heard the stories of the last dragon from her father Benja. As a villainous force was working its way across the land, turning people into stone, magical dragons united their forces together into a stone and one named Sisu used it to stop the pending apocalypse.</p>
                 <div>
                   <a href="#movie" class="btn-menu animate__animated animate__fadeInUp scrollto">Movies</a>
-                  <a href="booking.html" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
+                  <a href="booking.php" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Room</a>
                 </div>
               </div>
             </div>
