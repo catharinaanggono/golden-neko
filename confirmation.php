@@ -50,15 +50,15 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><img src="pictures/logo.svg" alt="" class="img-fluid"><span style='color: #ffb03b;'>Golden</span> Neko</a></h1>
+        <h1 class="text-light"><a href="index.php"><img src="pictures/logo.svg" alt="" class="img-fluid"><span style='color: #ffb03b;'>Golden</span> Neko</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="booking.html">Booking</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
+          <li><a href="booking.php">Booking</a></li>
 
           <li class="book-a-table text-center"><a href="#book-a-table">Book a room</a></li>
         </ul>
@@ -76,7 +76,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Booking page</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li>Booking page</li>
           </ol>
         </div>
